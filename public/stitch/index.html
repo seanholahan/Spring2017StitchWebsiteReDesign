@@ -19,6 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
     <script src="app.js"></script>
     <script src="config.js"></script>
@@ -28,7 +29,145 @@
     <script src="views/user/profile.controller.client.js"></script>
     <script src="views/user/register.controller.client.js"></script>
 
+
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <link href= "css/style.css" rel = "stylesheet">
+    <script>
+        $(document).on('click.nav','.navbar-collapse.in',function(e) {
+            if( $(e.target).is('a') ) {
+                $(this).removeClass('in').addClass('collapse');
+            }
+            else  {
+                $(this).removeClass('in').addClass('collapse');
+            }
+        });
+
+
+
+        jQuery(
+                function($)
+                {
+                    var $p = $(".title");
+                    var $slice = $(".slice1");
+                    var $stickyslice = $(".stickySlice");
+                    var $makeMatch = $(".makeMatch");
+                    var $left18 = $("#left8");
+                    var $left20 = $("#left7");
+
+              /*      var s1 = $("p:last").postition();
+                    var s2 = $slice2.offsetHeight;*/
+                    $('.parallax').bind('scroll', function()
+                    {
+
+
+
+
+
+        if($('.parallax').scrollTop()-$('#group2').height() > $('#group3').height())
+        {
+
+            $slice.css("display","none");
+            $stickyslice.css("display","block");
+            console.log("yeah");
+            $slice.css("top","20%");
+            $slice.css("left","5%");
+            $p.css("opacity: 1");
+        }
+
+        if($('.parallax').scrollTop()-$('#group2').height() < $('#group3').height())
+        {
+            $slice.css("display","block");
+            $stickyslice.css("display","none");
+            /*$p.css("background-color","white");*/
+            $slice.css("top","20%");
+            $slice.css("left","5%")
+        }
+
+
+        if($('.parallax').scrollTop()>$('#group1').height()+$('#group2').height())
+        {
+            $left20.css("display","none");
+            $left18.css("display","none");
+        }
+
+        if($('.parallax').scrollTop()<$('#group1').height()+$('#group2').height())
+        {
+            $left20.css("display","inline-block");
+            $left18.css("display","inline-block");
+        }
+
+
+
+        /*if($('.parallax').scrollTop()>$('#group2').height())
+        {
+
+            $left1.css("position","relative");
+            $left1.css("-webkit-animation","myfirst 5s cubic-bezier(0.85, 0.15, 1, 1) 0s 1");
+            $left1.css("animation","myfirst 5s cubic-bezier(0.85, 0.15, 1, 1) 0s 1");
+            $left1.css("animation","myfirst 5s cubic-bezier(0.85, 0.15, 1, 1) 0s 1");
+            console.log("YRP");
+
+
+
+        }*/
+                    })
+                }
+        );
+
+    </script>
+    <script type="text/javascript" src="js/masonry.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var $container = $('.grid').masonry({
+                columnWidth: 280,
+                itemSelector: '.items',
+                isFitWidth: true
+            });
+
+            var arrGreen = new Array($('.i1'),$('.i3'),$('.i6'),$('.i7'));
+            var arrRed = new Array($('.i2'),$('.i4'),$('.i5'),$('.i8'), $('.i9'),$('.i10'),$('.i11'),$('.i12'), $('.i13'),$('.i14'),$('.i15'));
+
+            $('input').click(function () {
+                $('.items').removeClass('expand');
+
+                if ($('.green').is(':checked')) {
+                    $container.masonry('hide', arrRed);
+                    $(arrGreen).each(function (index, element) {
+                        element.show();
+                    });
+                    $container.masonry();
+                } else if ($('.red').is(':checked')) {
+                    $container.masonry('hide', arrGreen);
+                    $(arrRed).each(function (index, element) {
+                        element.show();
+                    });
+                    $container.masonry();
+                } else if ($('.all').is(':checked')) {
+                    $(arrGreen).each(function (index, element) {
+                        element.show();
+                    });
+                    $(arrRed).each(function (index, element) {
+                        element.show();
+                    });
+                    $container.masonry();
+                }
+            });
+
+            $('.items').click(function () {
+                $(this).toggleClass('expand');
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.freetile.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            $('#myModal').modal('show');
+        });
+    </script>
 
 
 </head>
@@ -45,26 +184,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand navbrand"  href="#/" target = "_self" > <img src="images/stitchlogo.jpg" >
+            <a class="navbar-brand navbrand"  href="#/" target = "_self" > <img src="images/stitchlogo3.jpg" >
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse collapse" >
             <ul class="nav navbar-nav">
 
-                <li class="back" >
-                    <a href="#/">FOR SALE</a>
+                <li class="dropdown">
+                    <a href="#/home">FOR SALE</a>
                 </li>
 
                 <li class="dropdown">
-                    <a href="#/archive">ARCHIVE</a>
+                    <a href="#/custom">CUSTOM</a>
                 </li>
 
-                <li>
-                    <a href="#/contact">CONTACT</a>
+                <li class="dropdown">
+                    <a href="#/lookBook">LOOKBOOK</a>
                 </li>
 
-                <li>
+                <li class="dropdown">
                     <a href="https://www.instagram.com/stitchophrenicclothing/">INSTAGRAM</a>
                 </li>
 
@@ -77,8 +216,26 @@
 </nav>
 
 
+<div class="modal hide fade" id="myModal">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <p>One fine body…</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
+
 <div ng-view>
-</div>>
+</div>
+
+<div class="footer">
+    <h6>Stitchiphrenic™</h6>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"
         integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>

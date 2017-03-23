@@ -7,23 +7,69 @@
 
         $routeProvider
             .when("/", {
-                templateUrl: "views/home.html"
+                templateUrl: "views/landing.html"
             })
 
             .when("/home", {
-                redirectTo: "/"
+                templateUrl: "views/home.html"
             })
 
             .when("/contact", {
                 templateUrl: "views/contact.html"
             })
 
+            .when("/landing", {
+                redirectTo: "/"
+            })
+
+
+            .when("/contactStyle", {
+                templateUrl: "views/contactStyle.html"
+            })
+
+            .when("/custom", {
+                templateUrl: "views/custom.html"
+            })
+
+            .when("/custom1", {
+                templateUrl: "views/custom1.html"
+            })
+
+            .when("/custom2", {
+                templateUrl: "views/custom2.html"
+            })
+
+            .when("/custom3", {
+                templateUrl: "views/custom3.html"
+            })
+
+            .when("/custom4", {
+                templateUrl: "views/custom4.html"
+            })
+
+
             .when("/blog", {
                 templateUrl: "views/blog.html"
             })
 
+            .when("/custom5", {
+                templateUrl: "views/custom5.html"
+            })
+
             .when("/archive", {
                 templateUrl: "views/archive.html"
+            })
+
+            .when("/lookBook", {
+                templateUrl: "views/lookBook.html"
+            })
+
+            .when("/profile", {
+            templateUrl: "views/user/profile.html"
+        })
+
+            .when("/profile2", {
+                templateUrl: "views/user/profile2.html"
             })
 
             .when("/stitch1", {
@@ -63,7 +109,7 @@
             })
 
             .otherwise ({
-                redirectTo: "/"
+                redirectTo: "/home"
             });
     }
 })();
