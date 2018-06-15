@@ -1,5 +1,90 @@
 
 
+<script>
+    $(document).on('click.nav','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') ) {
+            $(this).removeClass('in').addClass('collapse');
+        }
+        else  {
+            $(this).removeClass('in').addClass('collapse');
+        }
+    });
+
+    $(document).on('hover.navbar-toggle','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') ) {
+            $(this).addClass('in');
+        }
+    });
+    jQuery(
+            function canvasReady($)
+            {
+                var $p = $(".title");
+                var $slice = $(".slice1");
+                var $stickyslice = $(".stickySlice");
+                var $makeMatch = $(".makeMatch");
+                var $left18 = $("#left8");
+                var $left20 = $("#left7");
+
+
+
+
+                /*      var s1 = $("p:last").postition();
+                 var s2 = $slice2.offsetHeight;*/
+                $('.parallax').bind('scroll', function()
+                {
+
+                    if($('.parallax').scrollTop()-$('#group2').height() > $('#group3').height())
+                    {
+
+                        $slice.css("display","none");
+                        $stickyslice.css("opacity","1");
+                        $slice.css("top","20%");
+                        $slice.css("left","5%");
+                        $p.css("opacity: 1");
+                    }
+
+                    if($('.parallax').scrollTop()-$('#group2').height() < $('#group3').height())
+                    {
+                        $slice.css("display","block");
+                        $stickyslice.css("opacity","0");
+                        /*$p.css("background-color","white");*/
+                        $slice.css("top","20%");
+                        $slice.css("left","5%")
+                    }
+
+
+                    if($('.parallax').scrollTop()>$('#group1').height()+$('#group2').height())
+                    {
+                        $left20.css("opacity","0");
+                        $left18.css("opacity","0");
+                    }
+
+                    if($('.parallax').scrollTop()<$('#group1').height()+$('#group2').height())
+                    {
+                        $left20.css("opacity","1");
+                        $left18.css("opacity","1");
+                    }
+
+
+
+                    /*if($('.parallax').scrollTop()>$('#group2').height())
+                     {
+
+                     $left1.css("position","relative");
+                     $left1.css("-webkit-animation","myfirst 5s cubic-bezier(0.85, 0.15, 1, 1) 0s 1");
+                     $left1.css("animation","myfirst 5s cubic-bezier(0.85, 0.15, 1, 1) 0s 1");
+                     $left1.css("animation","myfirst 5s cubic-bezier(0.85, 0.15, 1, 1) 0s 1");
+
+
+
+                     }*/
+                })
+            }
+    );
+
+</script>
+
+<div onload="canvasReady()">
 <h5 class="goShop"><a href="#/">CONTINUE TO SHOP</a></h5>
 
 <div class="parallax">
@@ -41,6 +126,7 @@
             <img src="images/shirtSlice2.png"; class ="slice2"   />
             <img src="images/shirtSlice3.png"; class ="stickySlice" style="display:none;"/>
             <h2 class="title"><a class="makeMatch" href="#/custom">EACH PIECE IS CUSTOM MADE</a></h2>
+
 
             <!--
                         <a href="#" class="btn btn-default sliceButton" role="button">CREATE YOUR OWN</a>
@@ -99,4 +185,4 @@
     ga('send', 'pageview');
 </script>
 
-
+</div>

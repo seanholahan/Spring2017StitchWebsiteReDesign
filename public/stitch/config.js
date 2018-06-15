@@ -31,26 +31,6 @@
                 templateUrl: "views/custom.html"
             })
 
-            .when("/custom1", {
-                templateUrl: "views/custom1.html"
-            })
-
-            .when("/custom2", {
-                templateUrl: "views/custom2.html"
-            })
-
-            .when("/custom3", {
-                templateUrl: "views/custom3.html"
-            })
-
-            .when("/custom4", {
-                templateUrl: "views/custom4.html"
-            })
-
-
-            .when("/blog", {
-                templateUrl: "views/blog.html"
-            })
 
             .when("/custom5", {
                 templateUrl: "views/custom5.html"
@@ -72,8 +52,11 @@
                 templateUrl: "views/user/profile2.html"
             })
 
-            .when("/stitch1", {
-                templateUrl: "item/stitch1.html"
+            .when("/stitch/:sid", {
+                templateUrl: "views/item.html",
+                controller: "ShirtController",
+            controllerAs: "model"
+
             })
 
             .when("/stitch7", {
