@@ -11,7 +11,9 @@
             })
 
             .when("/home", {
-                templateUrl: "views/home.html"
+                templateUrl: "views/home.html",
+                controller: "HomeController",
+                controllerAs: "model"
             })
 
             .when("/contact", {
@@ -28,7 +30,8 @@
             })
 
             .when("/custom", {
-                templateUrl: "views/custom.html"
+                templateUrl: "views/custom.html",
+                controller: "CustomController"
             })
 
 
@@ -41,7 +44,9 @@
             })
 
             .when("/lookBook", {
-                templateUrl: "views/lookBook.html"
+                templateUrl: "views/lookBook.html",
+                controller: "LookBookController",
+                controllerAs: "model"
             })
 
             .when("/profile", {
@@ -54,8 +59,8 @@
 
             .when("/stitch/:sid", {
                 templateUrl: "views/item.html",
-                controller: "ShirtController",
-            controllerAs: "model"
+                controller: "ItemController",
+                controllerAs: "model"
 
             })
 

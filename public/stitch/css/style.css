@@ -6,137 +6,11 @@ html, body {
     width: 100%;
 }
 
-.slider {
-    margin: 0 auto;
-    max-width: 940px;
-}
 
 
-.slide_viewer {
-    height: 70vh;
-    margin-bottom: -20px;
-    overflow: hidden;
-    position: relative;
-}
-
-.ico {
-    position: relative;
-}
 
 
-.slide_group {
-    height: 100%;
-    position: relative;
-    width: 100%;
-}
 
-.slide {
-    display: none;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-
-}
-
-.slide:first-child {
-    display: block;
-}
-
-.slide:nth-of-type(1) {
-    background: black;
-}
-
-.slide:nth-of-type(2) {
-    background: black;
-}
-
-.slide:nth-of-type(3) {
-    background: black;
-}
-
-.slide:nth-of-type(4) {
-    background: black;
-}
-
-.slide_buttons {
-    left: 0;
-
-    right: 0;
-    height: 12vh;
-    text-align: center;
-}
-
-a.slide_btn {
-    color: #474544;
-    font-size: 42px;
-    margin: 0 0.175em;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.slide_btn.active, .slide_btn:hover {
-    color: #428CC6;
-    cursor: pointer;
-}
-
-.directional_nav {
-    height: 34vh;
-    margin: 0 auto;
-
-    position: absolute;
-    top: 0px;
-}
-
-.previous_btn {
-    bottom: 0;
-    left: 100px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    height: 50px;
-    -webkit-transform:scale(1,5); /* Safari and Chrome */
-    -moz-transform:scale(1,5); /* Firefox */
-    -ms-transform:scale(1,5); /* IE 9 */
-    -o-transform:scale(1,5); /* Opera */
-    transform:scale(1,5);
-}
-
-.next_btn {
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    right: 100px;
-    top: 0;
-}
-
-.previous_btn, .next_btn {
-    cursor: pointer;
-    height: 65px;
-    opacity: 0.5;
-    -webkit-transition: opacity 0.4s ease-in-out;
-    -moz-transition: opacity 0.4s ease-in-out;
-    -ms-transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
-    transition: opacity 0.4s ease-in-out;
-    width: 65px;
-}
-
-.previous_btn:hover, .next_btn:hover {
-    opacity: 1;
-}
-
-@media only screen and (max-width: 767px) {
-    .previous_btn {
-        left: 50px;
-    }
-
-    .next_btn {
-        right: 50px;
-    }
-}
 
 body {
     background-color: black;
@@ -167,7 +41,7 @@ body {
     width: 100%;
     font-size: 14px;
     opacity:1;
-   // -webkit-text-stroke: .25px black;
+// -webkit-text-stroke: .25px black;
 }
 
 /*
@@ -233,14 +107,14 @@ body {
 
 
 .goShop {
-     position: fixed;
-     z-index: 7;
-     bottom: 25px;
-     right: 10px;
-     border: 1px solid white;
-     padding: 5px 3px 3px 3px;
-     background-color: black;
- }
+    position: fixed;
+    z-index: 7;
+    bottom: 25px;
+    right: 10px;
+    border: 1px solid white;
+    padding: 5px 3px 3px 3px;
+    background-color: black;
+}
 
 .goShop:hover {
     color: black;
@@ -289,7 +163,7 @@ a:hover{
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-     max-height: none;
+    max-height: none;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
@@ -389,9 +263,6 @@ label {
     opacity: .9;
 }
 
-.lookbook {
-    margin-bottom: 50px;
-}
 
 
 .carousel-indicators {
@@ -470,7 +341,7 @@ label {
 }
 
 .navbar{
-margin-bottom: 0px;
+    margin-bottom: 0px;
 
 }
 
@@ -500,8 +371,9 @@ margin-bottom: 0px;
 }
 
 .text {
-    width: 50%;
-    margin-left: 30%;
+    width: 69%;
+    margin-left: 19%;
+
 }
 
 .top {
@@ -543,7 +415,7 @@ margin-bottom: 0px;
 
 .itemView {
     width: 100%;
-    background-color: red;
+
 
 }
 
@@ -589,6 +461,7 @@ small {
 
 h1 {
     color: #cccccc;
+
 }
 
 h2 {
@@ -600,12 +473,59 @@ h3 {
 }
 h4 {
     color: #cccccc;
+
+}
+
+#contactH1 {
+
+    color: #ab2929;
+    letter-spacing: 4px;
+    margin-top: -1px;
+    margin-bottom: -15px;
+}
+
+#contactH3 {
+    color: white;
+    margin-bottom: 0px;
 }
 
 .form-check {
     color: #cccccc;
     margin-bottom: 10px;
 }
+
+label{
+    font-weight: 100;
+    text-align: left;
+}
+
+.input {
+    width: 100%;
+    display: block;
+    height: 36px;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+    padding: 10px 0;
+    transition: border-color 0.2s ease;
+    font-weight: 100;
+
+}
+
+.input:focus {
+    border: none;
+    border-bottom: solid 1px #ccc;
+    outline: none;
+
+}
+
+
+/*input:focus ~ label, input:valid ~ label 		{*/
+
+/*transform: translateY(-30px);*/
+
+/*}*/
 
 
 .background {
@@ -800,9 +720,7 @@ body, html {
 .itemTitle {
     text-align: left;
     position: relative;
-
     font-size: 20px;
-    text-decoration: underline;
     font-weight: lighter;
     vertical-align: middle;
     opacity: 1;
@@ -843,6 +761,7 @@ body, html {
     letter-spacing: .2rem;
     text-align: left;
     font-size: 16px;
+    margin-left: 20px;
 
 }
 
@@ -1077,6 +996,14 @@ body, html {
 
 @media (max-width: 667px) {
 
+
+
+
+
+
+
+
+
     #group1 .parallax__layer--base {
         background-size: cover;
     }
@@ -1255,29 +1182,29 @@ body, html {
 }*/
 
 
-.float-label-control { position: relative; margin-bottom: 1.5em; }
-.float-label-control ::-webkit-input-placeholder { color: transparent; }
-.float-label-control :-moz-placeholder { color: transparent; }
-.float-label-control ::-moz-placeholder { color: transparent; }
-.float-label-control :-ms-input-placeholder { color: transparent; }
-.float-label-control input:-webkit-autofill,
-.float-label-control textarea:-webkit-autofill { background-color: transparent !important; -webkit-box-shadow: 0 0 0 1000px white inset !important; -moz-box-shadow: 0 0 0 1000px white inset !important; box-shadow: 0 0 0 1000px white inset !important; }
-.float-label-control input, .float-label-control textarea, .float-label-control label { font-size: 1.3em; box-shadow: none; -webkit-box-shadow: none; }
-.float-label-control input:focus,
-.float-label-control textarea:focus { box-shadow: none; -webkit-box-shadow: none; border-bottom-width: 2px; padding-bottom: 0; }
-.float-label-control textarea:focus { padding-bottom: 4px; }
-.float-label-control input, .float-label-control textarea { display: block; width: 100%; padding: 0.1em 0em 1px 0em; border: none; border-radius: 0px; border-bottom: 1px solid #aaa; outline: none; margin: 0px; background: none; }
-.float-label-control textarea { padding: 0.1em 0em 5px 0em; }
-.float-label-control label { position: absolute; font-weight: normal; top: -1.0em; left: 0.08em; color: #aaaaaa; z-index: 1; font-size: 0.85em; -moz-animation: float-labels 300ms none ease-out; -webkit-animation: float-labels 300ms none ease-out; -o-animation: float-labels 300ms none ease-out; -ms-animation: float-labels 300ms none ease-out; -khtml-animation: float-labels 300ms none ease-out; animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/ animation-play-state: running !important; -webkit-animation-play-state: running !important; }
-.float-label-control input.empty + label,
-.float-label-control textarea.empty + label { top: 0.1em; font-size: 1.5em; animation: none; -webkit-animation: none; }
-.float-label-control input:not(.empty) + label,
-.float-label-control textarea:not(.empty) + label { z-index: 1; }
-.float-label-control input:not(.empty):focus + label,
-.float-label-control textarea:not(.empty):focus + label { color: #aaaaaa; }
-.float-label-control.label-bottom label { -moz-animation: float-labels-bottom 300ms none ease-out; -webkit-animation: float-labels-bottom 300ms none ease-out; -o-animation: float-labels-bottom 300ms none ease-out; -ms-animation: float-labels-bottom 300ms none ease-out; -khtml-animation: float-labels-bottom 300ms none ease-out; animation: float-labels-bottom 300ms none ease-out; }
-.float-label-control.label-bottom input:not(.empty) + label,
-.float-label-control.label-bottom textarea:not(.empty) + label { top: 3em; }
+/*.float-label-control { position: relative; margin-bottom: 1.5em; }*/
+/*.float-label-control ::-webkit-input-placeholder { color: transparent; }*/
+/*.float-label-control :-moz-placeholder { color: transparent; }*/
+/*.float-label-control ::-moz-placeholder { color: transparent; }*/
+/*.float-label-control :-ms-input-placeholder { color: transparent; }*/
+/*.float-label-control input:-webkit-autofill,*/
+/*.float-label-control textarea:-webkit-autofill { background-color: transparent !important; -webkit-box-shadow: 0 0 0 1000px white inset !important; -moz-box-shadow: 0 0 0 1000px white inset !important; box-shadow: 0 0 0 1000px white inset !important; }*/
+/*.float-label-control input, .float-label-control textarea, .float-label-control label { font-size: 1.3em; box-shadow: none; -webkit-box-shadow: none; }*/
+/*.float-label-control input:focus,*/
+/*.float-label-control textarea:focus { box-shadow: none; -webkit-box-shadow: none; border-bottom-width: 2px; padding-bottom: 0; }*/
+/*.float-label-control textarea:focus { padding-bottom: 4px; }*/
+/*.float-label-control input, .float-label-control textarea { display: block; width: 100%; padding: 0.1em 0em 1px 0em; border: none; border-radius: 0px; border-bottom: 1px solid #aaa; outline: none; margin: 0px; background: none; }*/
+/*.float-label-control textarea { padding: 0.1em 0em 5px 0em; }*/
+/*.float-label-control label { position: absolute; font-weight: normal; top: -1.0em; left: 0.08em; color: #aaaaaa; z-index: 1; font-size: 0.85em; -moz-animation: float-labels 300ms none ease-out; -webkit-animation: float-labels 300ms none ease-out; -o-animation: float-labels 300ms none ease-out; -ms-animation: float-labels 300ms none ease-out; -khtml-animation: float-labels 300ms none ease-out; animation: float-labels 300ms none ease-out; !* There is a bug sometimes pausing the animation. This avoids that.*! animation-play-state: running !important; -webkit-animation-play-state: running !important; }*/
+/*.float-label-control input.empty + label,*/
+/*.float-label-control textarea.empty + label { top: 0.1em; font-size: 1.5em; animation: none; -webkit-animation: none; }*/
+/*.float-label-control input:not(.empty) + label,*/
+/*.float-label-control textarea:not(.empty) + label { z-index: 1; }*/
+/*.float-label-control input:not(.empty):focus + label,*/
+/*.float-label-control textarea:not(.empty):focus + label { color: #aaaaaa; }*/
+/*.float-label-control.label-bottom label { -moz-animation: float-labels-bottom 300ms none ease-out; -webkit-animation: float-labels-bottom 300ms none ease-out; -o-animation: float-labels-bottom 300ms none ease-out; -ms-animation: float-labels-bottom 300ms none ease-out; -khtml-animation: float-labels-bottom 300ms none ease-out; animation: float-labels-bottom 300ms none ease-out; }*/
+/*.float-label-control.label-bottom input:not(.empty) + label,*/
+/*.float-label-control.label-bottom textarea:not(.empty) + label { top: 3em; }*/
 
 
 @keyframes float-labels {
@@ -1448,10 +1375,7 @@ html, body {
 }*/
 
 
-.footer{
-    width: 100%;
-    height: 21px;
-}
+
 
 
 @media (max-width: 440px){
@@ -1496,43 +1420,47 @@ html, body {
 }
 @media (min-width: 768px){
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-         margin-left: 0px;
+        margin-left: 0px;
     }
+
+
+
+
 }
 @media (max-width: 630px) {
     .buy1 {
         transform: translate(48%, 7%);
     }
 
-#left6 {
-    display: none;
-}
-#left2 {
-    display: none;
-}
-#left3 {
-    display: none;
-}
-#left7 {
-    display: none;
+    #left6 {
+        display: none;
+    }
+    #left2 {
+        display: none;
+    }
+    #left3 {
+        display: none;
+    }
+    #left7 {
+        display: none;
 
-}
+    }
 
-#left5 {
-    Width: 44.5%;
-}
-#left1 {
-    width: 44.5%;
-}
+    #left5 {
+        Width: 44.5%;
+    }
+    #left1 {
+        width: 44.5%;
+    }
 
-#left8 {
-    Width: 44.5%;
-    margin-right: 4%;
-}
-#left4 {
-    width: 44.5%;
-    margin-right: 4%;
-}
+    #left8 {
+        Width: 44.5%;
+        margin-right: 4%;
+    }
+    #left4 {
+        width: 44.5%;
+        margin-right: 4%;
+    }
 }
 
 
@@ -1559,10 +1487,10 @@ html, body {
 
 
     .navbar-toggle {
-         pointer-events: none;
-         display: none!important;
+        pointer-events: none;
+        display: none!important;
 
-     }
+    }
 
 
 
@@ -1745,6 +1673,24 @@ html, body {
         left: 0%;
     }
 
+
+    .text-section{
+        position: fixed;
+        background-color: black;
+        bottom: 10%;
+        right: 10px;
+        vertical-align: middle;
+        /* top: 89px; */
+        height: calc(50vh - 89px);
+        background: radial-gradient( #282929 25%,#282929 5%, black 90%);
+        background: linear-gradient(to right, black ,#282929 25%, #282929 75% ,black );
+        background: radial-gradient( #282929 5%, black 90%);
+    }
+
+    .text {
+        top: 12%;
+    }
+
 }
 
 @media (min-width: 736px) {
@@ -1780,6 +1726,520 @@ html, body {
 .ng-scope {
     background-color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*sfsdjf-------slkj*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-group {
+    position: relative;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.form-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-group input {
+
+    border: solid 1px #ccc;
+    width: 100%;
+    padding: 10px 0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    text-indent: 10px;
+}
+
+.form-group input:focus {
+    border: 1px solid darkred;
+
+    box-shadow:none;
+}
+
+.form-group label {
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    color: #aaa;
+    font-weight: 300;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.form-group label:hover {
+    cursor: text;
+}
+
+.form-group input:focus + label {
+    color: white;
+}
+
+.form-group input:focus + label,
+.form-group input.active + label{
+    transform: translateY(-30px);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #fbfbfb;
+}
+
+
+#contactSubmit {
+    float: right;
+    margin-right: 0px;
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+}
+
+.minHeight {
+    min-height: calc(100vh - 139px);
+
+}
+
+.btn:active {
+    background-color: #f2f2f2;
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+.form-group textarea {
+
+    border: 1px solid white;
+    border-bottom: solid 1px #ccc;
+    background-color: black;
+    height: 248px;
+    width: 100%;
+    padding: 10px 0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    text-indent: 10px;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    border-color: darkred;
+    box-shadow: 0 1px darkred;
+}
+
+.form-group textarea:focus + label,
+.form-group textarea.active + label
+
+{
+    transform: translateY(-30px);
+}
+
+
+textarea {
+    resize: vertical;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+    padding: 10px 0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: transparent;
+    height: 36px;
+    overflow-y: scroll;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.slides {
+    position:relative;
+    height:100px;
+    width:500px;
+}
+.slides img {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:-2;
+}
+.slides img.top {
+    z-index:-1;
+}
+.slides .front {
+    position: absolute;
+    right:10px;
+    top:120px;
+    padding: 5px;
+    border-radius: 60px;
+    width:38px;
+    height:38px;
+    text-align: center;
+    color:silver;
+    background: white;
+    opacity:0.4;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+.slides .back {
+    position: absolute;
+    left:10px;
+    top:120px;
+    padding: 5px;
+    border-radius: 60px;
+    width:38px;
+    height:38px;
+    text-align: center;
+    color:silver;
+    background: white;
+    opacity:0.4;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.mySlides {
+    display:none;
+}
+.slider {
+    cursor:pointer;
+
+    position: absolute;
+
+    top: 50%;
+
+    font-size: 40pt;
+    display: inline-block;
+    height: calc(100vh - 139px);
+}
+
+#rightSlider {
+    right: 20px;
+
+}
+
+#leftSlider {
+    left: 20px;
+
+}
+
+.lookBookIndex {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    /* position: absolute; */
+    z-index: 12;
+    left: 20px;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+
+.lookBook {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+
+
+
+
+.slider {
+    margin: 0 auto;
+    max-width: 940px;
+    width: 100%;
+    position:relative;
+
+}
+
+
+
+
+.slide_viewer {
+    height: calc(85vh - 89px);
+    margin-bottom: -20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ico {
+    position: relative;
+}
+
+
+.slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slide:nth-of-type(1) {
+    background: black;
+}
+
+.slide:nth-of-type(2) {
+    background: black;
+}
+
+.slide:nth-of-type(3) {
+    background: black;
+}
+
+.slide:nth-of-type(4) {
+    background: black;
+}
+
+.slide_buttons {
+    top: 40px;
+    height: 12vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+}
+
+.slide_btn {
+    color: #474544;
+    height: 10px;
+    width: 10px;
+    /* font-size: 42px; */
+    border: 1px solid white;
+    margin: 0 0.175em;
+    float: right;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+    border: 1px solid #ab2929;
+    background-color: #ab2929;
+    cursor: pointer;
+}
+
+.directional_nav {
+    height: 34vh;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 0px;
+}
+
+
+
+.itemBtn {
+    position: relative;
+    margin-right: 20px;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease, background-color 0.2s ease-in-out;
+
+}
+
+.btn {
+    position:absolute;
+    float: left;
+    margin-right: 20px;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease, background-color 0.2s ease-in-out;
+}
+
+.lookBookButtons {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+
+#previous_btn {
+    text-align: left;
+}
+
+#next_btn {
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    text-align: right;
+
+}
+
+.lookBookCarrots {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.lookBookCarrots.active, .lookBookCarrots:hover {
+
+    color: #ab2929;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.previous_btn, .next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .previous_btn {
+        left: 50px;
+    }
+
+    .next_btn {
+        right: 50px;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    height: 50px;
+    bottom: 00px;
+    position: relative;
+    border-top: 1px solid white;
+
+}
+
+.mediaLinks {
+    top: 0px;
+
+
+}
+.mediaIcons {
+    width: 20px;
+    height: 20px;
+    /* bottom: -7px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    top: -8px;
+    bottom: 0px;
+    margin-top: 22px;
+
+}
+
+.iconContainer{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+
+#footerTitle {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
 
 
 

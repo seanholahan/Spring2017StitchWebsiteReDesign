@@ -1,25 +1,144 @@
 
-    {
-      "id": "1",
-      "name": "Yo",
-      "description": "Hii",
-      "size": "",
-      "price": "",
-      "image1": "",
-      "image2": "",
-      "image3": "",
-      "image4": ""
-    },
-    {
-      "id": "2",
-      "name": "Why",
-      "description": "Me",
-      "size": "",
-      "price": "",
-      "image1": "",
-      "image2": "",
-      "image3": "",
-      "image4": ""
-    }
-  ]
+[{
+  "id": "1",
+  "name": "SMOOTH STIRRUP",
+  "coverImage": "images/d2.1.jpg",
+  "description": "Cotton and Wool",
+  "size": "Large",
+  "price": "50$",
+  "image1": "images/1.1.jpg",
+  "image2": "images/1.2.jpg"
+},
+  {
+    "id": "2",
+    "name": "RON BURGANDY",
+    "coverImage": "images/d2.2.jpg",
+    "description": "Hii",
+    "size": "Medium",
+    "price": "45$",
+    "image1": "images/2.1.jpg",
+    "image2": "images/2.2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "BEAR NECESSITIES",
+    "coverImage": "images/d2.3.jpg",
+    "description": "Hii",
+    "size": "Large",
+    "price": "50$",
+    "image1": "images/3.1.jpg",
+    "image2": "images/3.2.jpg"
+  },
+  {
+    "id": "4",
+    "name": "BLUE BOY",
+    "coverImage": "images/d2.4.jpg",
+    "description": "Hii",
+    "size": "Large",
+    "price": "50$",
+    "image1": "images/4.1.jpg",
+    "image2": "images/4.2.jpg"
+  },
+  {
+    "id": "5",
+    "name": "AUSTIN POWERS",
+    "coverImage": "images/d2.5.jpg",
+    "description": "Hii",
+    "size": "Small",
+    "price": "50$",
+    "image1": "images/5.1.jpg",
+    "image2": "images/5.2.jpg"
+  },
+  {
+    "id": "6",
+    "name": "SALMON",
+    "coverImage": "images/d2.6.jpg",
+    "description": "Hii",
+    "size": "Medium",
+    "price": "50$",
+    "image1": "images/6.1.jpg",
+    "image2": "images/6.2.jpg"
+  },
+  {
+    "id": "7",
+    "name": "COWBOY",
+    "coverImage": "images/d2.7.jpg",
+    "description": "Hii",
+    "size": "Large",
+    "price": "50$",
+    "image1": "images/7.1.jpg",
+    "image2": "images/7.2.jpg"
+  },
+  {
+    "id": "8",
+    "name": "PICASSO",
+    "coverImage": "images/d2.8.jpg",
+    "description": "Hii",
+    "size": "Mediom",
+    "price": "50$",
+    "image1": "images/8.1.jpg",
+    "image2": "images/8.2.jpg"
+  },
+  {
+    "id": "9",
+    "name": "CHEETAH",
+    "coverImage": "images/d2.9.jpg",
+    "description": "Hii",
+    "size": "Small",
+    "price": "50$",
+    "image1": "images/9.1.jpg",
+    "image2": "images/9.2.jpg"
+  },
+  {
+    "id": "10",
+    "name": "CASINO",
+    "coverImage": "images/d2.10.jpg",
+    "description": "Hii",
+    "size": "Large",
+    "price": "50$",
+    "image1": "images/10.1.jpg",
+    "image2": "images/10.2.jpg"
+  },
+  {
+    "id": "11",
+    "name": "BLUES CLUES",
+    "coverImage": "images/d2.11.jpg",
+    "description": "Hii",
+    "size": "Large",
+    "price": "50$",
+    "image1": "images/11.1.jpg",
+    "image2": "images/11.2.jpg"
+  },
+  {
+    "id": "12",
+    "name": "GROUTFIT",
+    "coverImage": "images/d2.12.jpg",
+    "description": "Hii",
+    "size": "Medium",
+    "price": "50$",
+    "image1": "images/12.1.jpg",
+    "image2": "images/12.2.jpg"
+  },
+  {
+    "id": "13",
+    "name": "DIXIE CUT",
+    "coverImage": "images/d2.13.jpg",
+    "description": "Hii",
+    "size": "Medium",
+    "price": "50$",
+    "image1": "images/13.1.jpg",
+    "image2": "images/13.2.jpg"
+  },
+  {
+    "id": "14",
+    "name": "GOD'S GIRL",
+    "coverImage": "images/d2.14.jpg",
+    "description": "Hii",
+    "size": "medium",
+    "price": "50$",
+    "image1": "images/14.1.jpg",
+    "image2": "images/14.2.jpg"
+  }
+]
+
 

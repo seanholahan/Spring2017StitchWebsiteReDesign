@@ -1,22 +1,50 @@
-    (function(){
+(function(){
         angular
             .module("WebAppMaker")
             .controller("ShirtController", ShirtController);
 
-        function ShirtController($routeParams) {
+        console.log("page loaded!",  window.location.href.substr(window.location.href.lastIndexOf('/') + 1));
+
+        function ShirtController($scope) {
             var vm = this;
 
-            $.getJSON("views/shirtInventory.json", function(json) {
-                console.log(json); // this will show the info it in firebug console
-                console.log(json[0])
-                // var shirts = JSON.parse(json);
-
-            });
 
 
+             $.getJSON("views/shirtInventory.json",
+
+                function (data) {
+                    $scope.shirtInventory = data;
+                    console.log("got it!", data);
+                })
 
 
-            var shirtId = $routeParams.sid;
+            $scope.setSelection = function(product) {
+
+                    console.log("page load!", window.location.href);
+
+
+
+                $scope.detail.show = !$scope.detail.show;
+                $scope.detail.source = product.code + '.html'
+            }
+
+
+
+
+
+
+
+
+
+        $scope.records = [
+                "Alfreds Futterkiste",
+                "Berglunds snabbköp",
+                "Centro comercial Moctezuma",
+                "Ernst Handel"
+            ];
+
+
+            var shirtId = $scope.sid;
             console.log("yo t dat",shirtId);
             function init() {
 
@@ -25,6 +53,9 @@
         }
 
     })();
+
+
+
 
 
 
