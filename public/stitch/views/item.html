@@ -21,9 +21,9 @@
             <!--<h4 class = "description">Size: {{shirtSize}}<br>Cotton<br>Western Snaps<br>{{shirtPrice}}</h4>-->
             <h4 class = "description">Size: {{shirtSize}}<br>Recycled Materials<br>Handmade<br>{{shirtPrice}}</h4>
             <div class="purchaseContainer">
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U648GEDNBTBF8"
+                <a ng-if="!isSold" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U648GEDNBTBF8"
                    class="btn-danger btn-left itemBtn" role="button">PURCHASE</a>
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U648GEDNBTBF8"
+                <a href="#/custom"
                    class="btn-danger btn-left itemBtn" role="button">HELP</a>
             </div>
         </div>
@@ -39,4 +39,4 @@
 
 <!-- fotorama.css & fotorama.js. -->
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-<script src="http://cdnjs.cloudflare.com/ajax/dflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->ttp://cdnjs.cloudflare.com/ajax/dflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/dflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 

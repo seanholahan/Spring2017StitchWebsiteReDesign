@@ -9,9 +9,9 @@
   },
   "devDependencies": {},
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "http-server ~./app -a localhost -p 8000 -c-1"
-},
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ~./app -a localhost -p 8000 -c-1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/seanholahan/Spring2017StitchWebsiteReDesign.git"

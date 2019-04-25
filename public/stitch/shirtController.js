@@ -36,12 +36,6 @@
 
 
 
-        $scope.records = [
-                "Alfreds Futterkiste",
-                "Berglunds snabbköp",
-                "Centro comercial Moctezuma",
-                "Ernst Handel"
-            ];
 
 
             var shirtId = $scope.sid;
@@ -53,9 +47,3 @@
         }
 
     })();
-
-
-
-
-
-

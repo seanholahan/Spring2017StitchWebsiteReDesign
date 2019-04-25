@@ -97,8 +97,7 @@
             })
 
             .otherwise ({
-                redirectTo: "/home"
+                redirectTo: "/"
             });
     }
 })();
-

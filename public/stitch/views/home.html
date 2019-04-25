@@ -5,25 +5,29 @@
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
             <a href="#/stitch/{{shirtInventory[$index].id}}" ng-click="setSelection(product);">
                 <img class="img-responsive centered item" src={{shirtInventory[$index].coverImage}} >
-                <h5 class="text-center">{{shirtInventory[$index].name}}<small></small></h5>
+                <h5 class="text-center">{{shirtInventory[$index].name}}<small ng-if="shirtInventory[$index].isSold"> SOLD</small></h5>
             </a>
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
             <a href="#/stitch/{{shirtInventory[$index+1].id}}" ng-click="setSelection(product);">
                 <img class="img-responsive centered item" src={{shirtInventory[$index+1].coverImage}} >
-                <h5 class="text-center">{{shirtInventory[$index+1].name}}<small></small></h5>
+                <h5 class="text-center">{{shirtInventory[$index+1].name}}<small ng-if="shirtInventory[$index+1].isSold"> SOLD</small></h5>
             </a>
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
             <a href="#/stitch/{{shirtInventory[$index+2].id}}" ng-click="setSelection(product);">
                 <img class="img-responsive centered item" src={{shirtInventory[$index+2].coverImage}} >
-                <h5 class="text-center">{{shirtInventory[$index+2].name}}<small></small></h5>
+                <h5 class="text-center">{{shirtInventory[$index+2].name}}<small ng-if="shirtInventory[$index+2].isSold"> SOLD</small></h5>
             </a>
         </div>
     </div>
 </div>
+
+
+
+
 
 
 

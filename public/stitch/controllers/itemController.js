@@ -20,6 +20,7 @@
         var shirtPrice;
         var shirtView1;
         var shirtView2;
+        var isSold;
 
         $http.get("views/shirtInventory.json").then(function(response) {
             $scope.myWelcome = response.data;
@@ -33,6 +34,7 @@
             $scope.shirtView1 = item.image1;
             $scope.shirtView2 = item.image2;
             $scope.description = item.description;
+            $scope.isSold = item.isSold;
         });
 
         // $scope.search = function() {
@@ -62,6 +64,7 @@
                 shirtView1 = item.image1;
                 shirtView2 = item.image2;
                 item = item.price;
+                isSold = item.isSold;
 
                 // vm.shirt = item.name;
                 console.log("got it!", item);
@@ -111,4 +114,3 @@
 /**
  * Created by seanHolahan on 6/19/18.
  */
-
